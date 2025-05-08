@@ -52,7 +52,8 @@
     role: string
     }
   </td>
-    <td>It possible to create a new type by extending an existing type using & operator
+  
+  <td>It possible to create a new type by extending an existing type using & operator </br>
     Example:
       
     type TUser=  {
@@ -61,19 +62,7 @@
     isDeleted: boolean
     }
     type TAdmin = TUser & {role: string}
-    
   </br>
   </td>
-
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-
   </tr>
 </table>
