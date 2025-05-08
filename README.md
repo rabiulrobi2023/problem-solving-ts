@@ -66,3 +66,30 @@
   </td>
   </tr>
 </table>
+
+<h1>Causes of using the keyof keyword in TypeScript</h1>
+<li>
+  keyof keyword mainly use to create string literal by using the key of an interface or a type. </br>
+  Example:
+  
+    interface IUser {
+    name: string;
+    age: number;
+    gender: "male" | "female";
+    }
+    type TUsrProperty1= 'name' | 'age'| 'gender'
+    type TUsrProperty2 = keyof IUser
+</li>
+<li>
+  To make a conditional type the keyof keyword is used widely.
+  Example:
+    
+    type TMyProperties = {
+    car: boolean;
+    byke: boolean;
+    truk: boolean; 
+    }; 
+    type TCheckProperty<T> = T extends keyof TMyProperties ? "Found" : null;
+
+</li>
+
